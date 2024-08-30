@@ -238,13 +238,13 @@ Remove a Specific Element from an Array
 
 javascript
 Copy code
-let numbers = [1, 2, 3, 4, 5];
+let numbers = [1, 2, 3, 4, 5];   sol - filter method numbers.filter(number => number !== 3);
 // Apply a method to remove the number 3 from the array.
 
 Concatenate Two Arrays
 
 javascript
-Copy code
+Copy code  solution - concat method 
 let arr1 = [1, 2, 3];
 let arr2 = [4, 5, 6];
 // Apply a method to concatenate the two arrays.
@@ -252,20 +252,20 @@ let arr2 = [4, 5, 6];
 Reverse an Array
 
 javascript
-Copy code
+Copy code                   solution - reverse()
 let arr = [1, 2, 3, 4, 5];
 // Apply a method to reverse the array.
 
 Find the Length of an Array
 
-javascript
+javascript             solution - array.length
 Copy code
 let arr = [1, 2, 3, 4, 5];
 // Apply a method to find the length of the array.
 
 Insert an Element at a Specific Position in an Array
 
-javascript
+javascript             solution - array.splice(index,remove-element if want else set to 0,add-number)
 Copy code
 let arr = [1, 2, 4, 5];
 // Apply a method to insert the number 3 at the 3rd position in the array.
@@ -273,21 +273,22 @@ let arr = [1, 2, 4, 5];
 Remove the First Element from an Array
 
 javascript
-Copy code
+Copy code        solution - shift() method
 let arr = [1, 2, 3, 4, 5];
 // Apply a method to remove the first element from the array.
 
 Remove the Last Element from an Array
 
-javascript
+javascript              solution - pop() method 
 Copy code
 let arr = [1, 2, 3, 4, 5];
 // Apply a method to remove the last element from the array.
 
 Find the Difference Between Two Arrays
 
-javascript
-Copy code
+javascript               solution - step 1 find diff-1 with filter arr1 with include(arr2)
+Copy code                           step 2 find diff-2 filter arr2 with include(arr1)
+                                    step 3 concat both diff
 let arr1 = [1, 2, 3, 4];
 let arr2 = [3, 4, 5, 6];
 // Apply a method to find the difference between the two arrays.
@@ -295,14 +296,14 @@ let arr2 = [3, 4, 5, 6];
 Find the Union of Two Arrays
 
 javascript
-Copy code
+Copy code              solution - [...new Set([...arr1,...arr2])] 
 let arr1 = [1, 2, 3];
 let arr2 = [3, 4, 5];
 // Apply a method to find the union of the two arrays.
 
 Find the Intersection of Two Arrays
 
-javascript
+javascript              sol- arr1.filter(value => arr2.includes(value));
 Copy code
 let arr1 = [1, 2, 3];
 let arr2 = [2, 3, 4];
